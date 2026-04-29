@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background:linear-gradient(to left, rgb(84, 184, 238),white);
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator-container{
+            background-color: rgb(170, 160, 160);
+            padding: 30 px;
+            border-radius: 12 px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(129, 89, 89, 0.1);
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 25%;
+            height: 700px;
+        }
+        h1{color:chocolate; margin-bottom: 20px;margin-top: 15px;font-style: italic;font-family: cursive;}
+        input{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid ;
+            border-radius: 5px;
+            width: 40%;
+            font-size: 16px;
+        }
+        label{display:inline-block;
+            font-weight: bold;
+            margin-top: 10x;}
+
+        button{padding: 10px 15px; width:17%; font-size:large; font-weight: 800 ; margin:5px;
+        border-color:lime; cursor: pointer; border-radius: 10px;
+        transition: background 0.3s;}
+
+        button:hover {background-color: darkgreen;}
+
+div:hover { background-color: #4e617b; }
+
+result{
+    margin-top: 25px;
+    color: crimson;
+    font-size: large;
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+  
+    <h1>Simple Calculator</h1>
+ 
+    <label>Number1</label>
+    <input type="text" id="input1">     <!---if used number data type ----dropdowm-->
+     <br><br>
+    <label>Number2</label>
+    <input type="text" id="input2">
+    <br><br><br>
+    
+    <button type="button" id="add">Addition</button>
+ 
+    
+    <button type="button" id="sub">Substract</button>
+ 
+    
+    <button type="button" id="mul">Multiplication</button>
+ 
+   
+    <button type="button" id="div">Division</button>
+ 
+    <h1 id="result">Result:</h1>
+    </div>
+    
+    <script src="cal.js"></script>
+
+</body>
+</html>
